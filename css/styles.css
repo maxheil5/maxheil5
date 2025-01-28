@@ -37,11 +37,12 @@
 }
 
 .profile-pic {
-    width: 200px;  /* Adjust the size as needed */
-    height: 200px; /* Keeps the image square */
-    border-radius: 50%; /* Makes the image circular */
-    object-fit: cover; /* Ensures proper image scaling */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Adds a slight shadow for better styling */
+    width: 200px;  
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fills the circular frame */
+    object-position: center top; /* Moves the image up */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Adjust for smaller screens */
