@@ -34,7 +34,7 @@
 .project-image {
     width: 100%;  /* Ensures full width */
     height: auto;  /* Maintains aspect ratio */
-    max-height: 350px;  /* Prevents excessive stretching */
+    max-height: 250px;  /* Prevents excessive stretching */
     overflow: hidden;  /* Crops overflow */
     display: flex;
     justify-content: center;
