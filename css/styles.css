@@ -81,3 +81,33 @@
         margin-bottom: 15px;
     }
 }
+
+#certifications {
+    padding: 50px 15px;
+    border-bottom: 1px solid #dcd9d9;
+    text-align: center;
+}
+
+#certifications h2 {
+    color: #374054;
+    margin-bottom: 30px;
+}
+
+#certifications ul {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 800px;
+    text-align: left;
+}
+
+#certifications li {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #374054;
+    background: #e4e4ea;
+    list-style: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+}
