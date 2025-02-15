@@ -1,426 +1,60 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Max Heil's Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Heil - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/script.js"></script>
 </head>
-
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
+
     <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-	        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+        <nav class="navbar">
+            <div class="logo">Max Heil</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </nav>
     </header>
 
-    <!-- End header -->
-
-    <div id="lead">
-        <div id="lead-content">
+    <section id="hero">
+        <div class="hero-content">
             <h1>Max Heil</h1>
-            <h2>Aerospace Engineer</h2>
-            <a href="Max_Heil_Resume_Jan_2025_V2.pdf" class="btn-rounded-white">Download Resume</a>
+            <p>Aerospace Engineer | Space Systems & Research</p>
+            <a href="Max_Heil_Resume_Jan_2025_V2.pdf" class="btn">Download Resume</a>
         </div>
-        <!-- End #lead-content -->
+    </section>
 
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Max Heil, a senior aerospace engineering student at Ohio State University. Passionate about space systems, experimental research, and pushing the boundaries of aerospace technology.</p>
         </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
+    </section>
 
-<div id="about">
-    <div class="container">
-        <div class="row about-container">
-            <div class="col-md-4">
-                <img src="images/heil.115_headshot_Sept2024.jpg" alt="Max Heil" class="profile-pic">
-            </div>
-            <div class="col-md-8">
-                <h2 class="heading">About Me</h2>
-                <p>
-                        Hello! My name is Max Heil, and I’m a senior aerospace engineering student at The Ohio State University, set to graduate with my Bachelor of Science in 2025 and my Master of Science in 2026 (via BS/MS Program). My passion for aerospace engineering is driven by a love for experimentation, hands-on problem-solving, and pushing the boundaries of technology in aviation and space.
-
-I recently completed an internship at Collins Aerospace in avionics advanced manufacturing, where I worked on solving real-world challenges in aerospace technology. Now, I’m deeply immersed in experimental research, including projects on quadcopter dynamics and the effects of quantization using innovative dither techniques. I’m also exploring advanced space propulsion systems through my work on the TERRASat project—a CubeSat mission to Mars that utilizes atmosphere-breathing electric propulsion to measure localized magnetic fields. This project has been a unique opportunity to apply my skills in mission design, MATLAB simulations, and trajectory modeling to real-world space exploration.
-
-My interests extend to advanced space propulsion, where I’m eager to contribute to the development of new technologies that can shape the future of space exploration. In my free time, I take to the skies with my private pilot’s license, build custom drones, and experiment with 3D printing. I recently launched a small business creating 3D-printed products, combining technical expertise with entrepreneurial ambition.
-
-Whether it's testing new ideas in the lab, building complex systems, or exploring the skies, I’m driven by the challenge of turning innovative concepts into tangible results. Through my work, I aim to make a significant impact on aerospace technology and inspire others to pursue their own high-flying ambitions. Feel free to explore my portfolio and reach out—I’d love to connect!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-<div id="experience" class="background-alt">
-    <h2 class="heading">Experience</h2>
-    <div id="experience-timeline">
-
-        <div data-date="January 2025 – Present">
-            <h3>NASA Human Lander Challenge (HuLC)</h3>
-            <h4>Project Leader</h4>
-            <p>
-                I lead a team of 12 student engineers in designing cryogenic fluid management solutions for long-duration lunar and Mars propulsion systems. My role involves organizing technical development, coordinating team efforts, and overseeing system design and analysis. I focus on improving on-orbit cryogenic propellant transfer efficiency while minimizing boil-off, incorporating research on low-leakage cryogenic couplings and automated fueling interfaces for deep-space applications. Our work culminates in a proposal submission to NASA, aiming for selection to present at the HuLC Forum at Marshall Space Flight Center.
-            </p>
-        </div>
-
-        <div data-date="June 2024 – Present">
-            <h3>Laboratory for Autonomy in Data-Driven and Complex Systems (LADDCS)</h3>
-            <h4>Space Systems Graduate Researcher</h4>
-            <p>
-                I explore intent estimation theory within the Hill frame by analyzing and categorizing unknown spacecraft maneuvers to identify best-fit intent models, utilizing probabilistic methods and game-theory approaches. Building on this foundation, I am developing an expanded set of basis maneuvers to improve the accuracy of intent predictions. To enhance maneuver detection, I incorporate Adaptive Monte Carlo (AMC) methods for Bayesian inference, effectively reducing uncertainties. Additionally, I investigate kill chain methodologies for acquiring, tracking, and ensuring asset protection in space as part of my work with the SDA TAP Lab.
-            </p>
-        </div>
-
-        <div data-date="September 2023 - Present">
-            <h3>Systems, Optimization, and Autonomous Robotics Laboratory (SOAR)</h3>
-            <h4>Aerospace Controls Undergraduate Researcher</h4>
-            <p>
-                I develop and validate data-driven control systems for UAVs using extended dynamic mode decomposition (EDMD) and model predictive control (MPC) techniques in MATLAB and ROS. My work includes investigating the impact of dither quantization on UAV control performance in resource-limited environments. To bridge theory and application, I conduct SITL and HITL testing using a PX4-Starling Autonomy drone, enabling the analysis of real-world UAV dynamics. Additionally, I design robust methods for experimental testing, including the implementation of control schemes, flight tests, and performance benchmarking.
-            </p>
-        </div>
-
-        <div data-date="May 2024 – January 2025">
-            <h3>Collins Aerospace</h3>
-            <h4>Avionics Advanced Manufacturing Engineering Intern</h4>
-            <p>
-                I developed robust simulations in Visual Components to evaluate bottlenecks in automated manufacturing modules, presenting detailed renderings and analyses to leadership, which secured $3 million in funding for the automation project. Leveraging additive manufacturing, I utilized Markforged Metal X and Prusa printers to design and implement 3D-printed components, optimizing strength-to-weight ratios and reducing production costs by over $24,000. Additionally, I led the end-to-end validation of an RFID system to enhance WIP tracking and traceability, ensuring seamless integration into existing workflows. My contributions extended to NPI testing, where I assessed the impact of various environmental conditions on avionics systems. Further, I operated Boeing 737 MAX simulators, gaining hands-on experience in test bed setup and troubleshooting methodologies critical to avionics development.
-            </p>
-        </div>
-
-        <div data-date="August 2023 – Present">
-            <h3>The Ohio State University, Department of Mechanical and Aerospace Engineering</h3>
-            <h4>Undergraduate Teaching Assistant</h4>
-            <p>
-                Teaching assistant for AEROENG 3522, Astronautics (Dec 2025 - Present). Grader for AEROENG 3521, Flight Vehicle Controls. Teaching Assistant for AEROENG 2200, Introduction to Aerospace Engineering.
-            </p>
-        </div>
-
-        <div data-date="May 2022 - September 2024">
-            <h3>The Ohio State University, Dining Services</h3>
-            <h4>Student Manager</h4>
-            <p>
-                Managed over 40 employees at a time by delegating tasks to ensure proper store function and smooth operation.
-            </p>
-        </div>
-
-    </div> <!-- Closing #experience-timeline div -->
-</div> <!-- Closing #experience div -->
-<!-- End #Experience -->
-
-
-
-<div id="education">
-    <h2 class="heading">Education</h2>
-    
-    <div class="education-block">
-        <h3>The Ohio State University</h3>
-        <span class="education-date">August 2021 - May 2025</span>
-        <h4>Bachelor of Science in Aerospace Engineering with Honors Research Distinction, Cum Laude</h4>
-        <ul>
-            <li>
-                GPA: 3.6/4.0
-            </li>
-            <li>
-                Coursework: Statics, Circuits, Thermodynamics, Flight Vehicle Dynamics & Controls, Aerodynamics, Numerical Methods, 
-                Aerospace Structures, Astronautics, Gas Dynamics, Heat Transfer, Propulsion, Space Vehicle Design
-            </li>
-            <li>
-                Research: Systems, Optimization, and Autonomous Robotics Laboratory (SOAR) – Aerospace Controls Research
-            </li>
-        </ul>
-    </div>
-    <!-- End .education-block -->
-
-    <div class="education-block">
-        <h3>The Ohio State University</h3>
-        <span class="education-date">August 2024 - May 2026</span>
-        <h4>Master of Science in Aerospace Engineering</h4>
-        <ul>
-            <li>
-                GPA: 4.0/4.0
-            </li>
-            <li>
-                Coursework: Guidance Navigation and Control (GNC) of Aerospace Vehicles, Orbital Mechanics, Advanced Space Propulsion, Experimental Fluid Mechanics
-            </li>
-            <li>
-                Research: Laboratory for Autonomy in Data-Driven and Complex Systems (LADDCS) – Space Systems Research
-            </li>
-        </ul>
-    </div>
-    <!-- End .education-block -->
-</div>
-<!-- End #education -->
-
-
-<div id="projects" class="background-alt">
-    <h2 class="heading">Projects</h2>
-    <div class="container">
-        <div class="row">
-
-            <!-- TERRASat Project -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/12U Frame Assembly with Covers.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3>Terrain Electromagnetic Reconnaissance and Regional Analysis Satellite (TERRASat)</h3>
-                    <p>
-                        Designing and developing a 12U CubeSat mission to Mars that utilizes atmosphere-breathing electric propulsion 
-                        to measure localized magnetic fields. The project aims to analyze crustal magnetism as a potential indicator 
-                        of past habitability. My role includes mission design, MATLAB-based trajectory modeling, and integrating 
-                        STK for orbital analysis.
-                    </p>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="images/12U_Frame.jpg" alt="TERRASat">
+                    <h3>TERRASat</h3>
+                    <p>12U CubeSat mission to Mars using atmosphere-breathing electric propulsion.</p>
                     <a href="projects/terrasat.html">View Project</a>
                 </div>
+                <!-- Add more project cards here -->
             </div>
-
-            <!-- Project IMPART -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/IMPART_LogoV1.png" />
-                </div>
-                <div class="project-info">
-                    <h3>Integrated Modeling and Prediction of Atmospheric Reentry Trajectory (Project IMPART)</h3>
-                    <p>
-                        Developing a Monte Carlo-based physics framework to predict satellite reentry and impact footprint. The 
-                        project leverages atmospheric and orbital decay models to enhance reentry survivability analysis, improving 
-                        risk assessment for uncontrolled space debris.
-                    </p>
-                    <a href="projects/impart.html">View Project</a>
-                </div>
-            </div>
-
-            <!-- Space Object Reacquisition -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/AMC_prop.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3>Search and Reacquisition of Resident Space Objects</h3>
-                    <p>
-                        Utilizing AI, Adaptive Monte Carlo (AMC), and least squares regression techniques to predict and reacquire 
-                        lost space objects. The project integrates game-theoretic intent estimation and maneuver propagation models 
-                        for improved space situational awareness.
-                    </p>
-                    <a href="projects/reacquisition.html">View Project</a>
-                </div>
-            </div>
-
-            <!-- NASA HuLC Project -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/HuLC_LogoMark.png" />
-                </div>
-                <div class="project-info">
-                    <h3>NASA Human Lander Challenge (HuLC)</h3>
-                    <p>
-                        Leading a 12-member student team in designing cryogenic fluid management solutions for long-duration lunar 
-                        and Mars propulsion systems. Research focuses on on-orbit propellant transfer efficiency, minimizing 
-                        boil-off, and developing automated deep-space refueling interfaces.
-                    </p>
-                    <a href="projects/hulc.html">View Project</a>
-                </div>
-            </div>
-
-            <!-- UAV Aerospace Controls -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/SOAR_Logo.png" />
-                </div>
-                <div class="project-info">
-                    <h3>UAV Aerospace Controls Research</h3>
-                    <p>
-                        Investigating data-driven control techniques for UAVs using extended dynamic mode decomposition (EDMD) 
-                        and model predictive control (MPC). Experimental validation is performed using SITL and HITL testing 
-                        with a PX4-Starling Autonomy drone to assess real-world control performance under dither quantization.
-                    </p>
-                    <a href="projects/uav.html">View Project</a>
-                </div>
-            </div>
-
-            <!-- Custom Drone Build -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/b13.jpg" />
-                </div>
-                <div class="project-info">
-                    <h3>Custom Drone for Aerial Photography</h3>
-                    <p>
-                        Built a custom 3D-printed drone inspired by the DJI Mavic Pro for aerial photography. The drone features 
-                        brushless motors, a lightweight frame, and a modular flight controller for enhanced flight time and 
-                        performance optimization.
-                    </p>
-                    <a href="projects/drone.html">View Project</a>
-                </div>
-            </div>
-
-            <!-- BSLI Rocket Development -->
-            <div class="project shadow-large">
-                <div class="project-image">
-                    <img src="images/BSLI_Logo.png" />
-                </div>
-                <div class="project-info">
-                    <h3>Avionics & Propulsion Engineering - Buckeye Space Launch Initiative (BSLI)</h3>
-                    <p>
-                        Worked with a team to design, test, and optimize avionics and solid rocket motors for the Spaceport America 
-                        Cup. Responsibilities included engine performance validation, sensor integration, and telemetry analysis.
-                    </p>
-                    <a href="#">View Project</a>
-                </div>
-            </div>
-
         </div>
-    </div>
-</div>
-<!-- End #projects -->
-
-
-<div id="skills">
-    <h2 class="heading">Skills</h2>
-    <ul>
-        <!-- Programming Languages -->
-        <li>MATLAB</li>
-        <li>Python</li>
-        <li>LaTeX</li>
-
-        <!-- Software & Tools -->
-        <li>Simulink</li>
-        <li>Ansys Fluent</li>
-        <li>Ansys STK</li>
-        <li>SolidWorks</li>
-        <li>LabVIEW</li>
-        <li>ROS (Robot Operating System)</li>
-        <li>Microsoft Office</li>
-
-        <!-- Engineering & Aerospace Skills -->
-        <li>Orbital Mechanics</li>
-        <li>Guidance, Navigation, and Control (GNC)</li>
-        <li>Space Systems Engineering</li>
-        <li>Propulsion Systems</li>
-        <li>Flight Dynamics & Controls</li>
-        <li>Computational Fluid Dynamics (CFD)</li>
-
-        <!-- Data Analysis -->
-        <li>Bayesian Inference</li>
-        <li>Monte Carlo Methods</li>
-
-        <!-- Hardware & Manufacturing -->
-        <li>3D Printing (Markforged, Prusa, Bambu Labs)</li>
-        <li>RFID Systems</li>
-    </ul>
-</div>
-<!-- End #skills -->
-
-	<div id="certifications" class="background-alt">
-    <h2 class="heading">Awards & Certifications</h2>
-    <ul>
-        <!-- Certifications -->
-        <li>Ansys STK Level 1 Certified (Oct 2024, Ansys)</li>
-        <li>Private Pilot Certificate (Jan 2024, FAA)</li>
-        <li>Microsoft Office Specialist (Jan 2018, Microsoft)</li>
-
-        <!-- Awards & Achievements -->
-        <li>Undergraduate Teaching Assistant Award Finalist (Aug 2024, Ohio State)</li>
-    </ul>
-</div>
-<!-- End #certifications -->
-
-
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
+    </section>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2025</span> Maxwell Heil
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <p>&copy; 2025 Max Heil | All Rights Reserved</p>
     </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
 </body>
-
 </html>
