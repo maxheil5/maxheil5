@@ -1,39 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TERRASat Project</title>
+    <title>TERRASat Project - Max Heil</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
-
 <body>
 
     <header>
         <ul id="menu">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../index.html#projects">Projects</a></li>
-            <li><a href="../index.html#contact">Contact</a></li>
         </ul>
     </header>
 
     <div class="container">
-        <h2 class="heading">TERRASat Project</h2>
-        <img src="../images/12U Frame Assembly with Covers.jpg" alt="TERRASat" width="100%">
+        <h2 class="heading">TERRASat: Terrain Electromagnetic Reconnaissance and Regional Analysis Satellite</h2>
+        
+        <img src="../images/12U Frame Assembly with Covers.jpg" alt="TERRASat CAD Model" width="100%">
+
         <p>
-            The Terrain Electromagnetic Reconnaissance and Regional Analysis Satellite (TERRASat) is a 12U CubeSat mission to Mars.
-            It utilizes atmosphere-breathing electric propulsion to measure localized magnetic fields and analyze crustal magnetism.
-            My contributions include mission design, MATLAB-based trajectory modeling, and integrating STK for orbital analysis.
+            **TERRASat** is a **12U CubeSat mission to Mars** designed to measure **localized magnetic fields** using **atmosphere-breathing electric propulsion (ABEP)** and **AI-driven crater detection**. 
         </p>
+
+        <h3>🚀 My Role in TERRASat</h3>
+        <p>
+            As part of the **mission design and orbital mechanics team**, I focused on:
+        </p>
+        <ul>
+            <li>**Trajectory Design** – Modeled the **Earth-to-Mars transfer orbit** using **MATLAB and STK**.</li>
+            <li>**Spiral Trajectory Planning** – Simulated the **low-thrust escape trajectory** from Earth’s **40,000 km parking orbit**.</li>
+            <li>**Delta-V Optimization** – Generated **pork chop plots** to refine launch windows and **mission timing**.</li>
+            <li>**Mars Parking Orbit** – Developed the **123 km altitude circular orbit**, ensuring **sustained operation** with ABEP.</li>
+            <li>**Interplanetary Navigation** – Assisted in modeling the spacecraft’s **autonomous course corrections**.</li>
+        </ul>
+
+        <h3>🛰️ My Contributions in Action</h3>
+        <p>
+            One of my key contributions was creating a **pork chop plot** to determine the **optimal departure window** for TERRASat’s transfer to Mars. 
+            This involved running **Lambert’s problem solvers** in MATLAB to calculate the **minimum ΔV required** for the transfer.
+        </p>
+
+        <img src="../images/Mars_Transfer.png" alt="Mars Transfer Orbit Simulation" width="100%">
+
+        <p>
+            Another critical component of my work was designing the **spiral trajectory** for Earth departure. Since TERRASat uses a **low-thrust ion propulsion system**, 
+            the escape trajectory is **not a traditional Hohmann transfer** but instead a continuous **spiraling expansion** until leaving Earth’s sphere of influence.
+        </p>
+
+        <img src="../images/Spiral_Trajectory.png" alt="Spiral Orbit Design" width="100%">
+
+        <h3>⚙️ Mission Design and Challenges</h3>
+        <p>
+            I was heavily involved in modeling the **final insertion orbit around Mars**, balancing:
+        </p>
+        <ul>
+            <li>**Altitude stability** – Ensuring the satellite remains in a **low-altitude orbit** for **high-resolution data collection**.</li>
+            <li>**Propulsion trade-offs** – Evaluating the feasibility of **ABEP vs. traditional propellant** for orbit maintenance.</li>
+            <li>**Magnetometer Placement** – Optimizing the satellite’s **orientation and positioning** for the best magnetic field readings.</li>
+        </ul>
+
+        <h3>🔍 AI and Data Collection</h3>
+        <p>
+            While my main focus was **orbital mechanics**, I also contributed to discussions on **data processing techniques** for TERRASat’s AI-driven crater detection.
+            The AI model autonomously identifies **scientifically relevant craters**, ensuring that **only high-value data is transmitted** back to Earth.
+        </p>
+
+        <img src="../images/AI_Crater_Detection.png" alt="AI-based Crater Detection" width="100%">
+
+        <h3>📊 Key Results</h3>
+        <ul>
+            <li>Designed a **complete Earth-to-Mars trajectory** using MATLAB and STK.</li>
+            <li>Created and optimized a **spiral escape trajectory** for **low-thrust departure**.</li>
+            <li>Developed a **stable low-altitude orbit** around Mars for **long-term data collection**.</li>
+            <li>Contributed to **pork chop plot analysis** for launch window selection.</li>
+        </ul>
+
+        <h3>🎯 What’s Next?</h3>
+        <ul>
+            <li>Refining **Mars arrival trajectory** simulations.</li>
+            <li>Validating **ABEP efficiency** for long-duration missions.</li>
+            <li>Integrating **STK and MATLAB models** for end-to-end simulation.</li>
+        </ul>
+
+        <p>
+            TERRASat is a groundbreaking mission that demonstrates **the potential of CubeSats in interplanetary exploration**. 
+            My work in **orbital mechanics and trajectory design** has been critical in defining how this small spacecraft can **navigate to Mars and maintain a stable orbit**.
+        </p>
+
         <a href="../index.html#projects" class="btn-rounded-white">Back to Projects</a>
     </div>
 
-    <footer>
-        <p>Copyright &copy; <span id="current-year">2025</span> Maxwell Heil</p>
-    </footer>
-
 </body>
-
 </html>
+
