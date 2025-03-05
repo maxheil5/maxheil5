@@ -118,31 +118,37 @@
     border-radius: 5px;
 }
 
-/* === Parallax Background Styling === */
+/* === Parallax Effect Styling === */
 .parallax {
     position: relative;
     background-size: cover;
-    background-attachment: fixed; /* Creates the parallax effect */
+    background-attachment: fixed; /* Enables parallax effect */
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
-/* Specific Backgrounds */
-#hero {
-    background-image: url('../images/earth-space.jpg'); /* Replace with your actual image path */
-}
-
+/* === TERRASat Project Background === */
 #terrasat {
-    background-image: url('../images/mars-surface.jpg'); /* Replace with actual path */
+    background-image: url('images/backgrounds/nasa-Q1p7bh3SHj8-unsplash.jpg'); /* Replace with your actual image */
 }
 
+/* === UAV Project Background === */
 #uav {
-    background-image: url('../images/drone-blueprint.jpg'); /* Replace with actual path */
+    background-image: url('images/backgrounds/ian-usher-JPAfSd_acI8-unsplash.jpg'); /* Replace with actual image */
 }
 
-#intent-estimation {
-    background-image: url('../images/futuristic-ai.jpg'); /* Replace with actual path */
+/* Overlay to make text readable */
+.overlay {
+    background: rgba(0, 0, 0, 0.5); /* Darken background for readability */
+    padding: 50px;
+    border-radius: 10px;
 }
+
 
